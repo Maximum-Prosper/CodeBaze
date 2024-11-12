@@ -6,7 +6,7 @@ body {
 }
 
   .BGsection1 {
-    background-image: url(../imgs/background-pattern-desktop.svg);
+    background-image: url(images/background-pattern-desktop.svg);
     width: 100%;
     height: 50Vh;
   }

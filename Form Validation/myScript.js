@@ -12,6 +12,6 @@ radioBtns.forEach(radioBtn => {
       // Reset background color for all divs
      containers.forEach(container => container.style.backgroundColor = '');
 
-      radioBtn.closest('.container').style.backgroundColor = 'rgb(153, 71, 230)';
+      radioBtn.closest('.container').style.backgroundColor = 'rgb(14, 238, 163)';
     });
   });

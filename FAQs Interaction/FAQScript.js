@@ -12,7 +12,7 @@ function render(index) {
   if (!answers[index].classList.contains("hidden")) {
     // If it is visible, hide it and reset the control icon to the plus symbol
     answers[index].classList.add("hidden");
-    controls[index].src = "Assets/imgs/icon-plus.svg";
+    controls[index].src = "images/icon-plus.svg";
   } else {
     // If it is hidden, hide all answers first
     answers.forEach((answer) => {
@@ -21,12 +21,12 @@ function render(index) {
 
     // Reset all control icons to the plus symbol
     controls.forEach((control) => {
-      control.src = "Assets/imgs/icon-plus.svg";
+      control.src = "images/icon-plus.svg";
     });
 
     // Show the selected answer and change the icon to the minus symbol
     answers[index].classList.remove("hidden");
-    controls[index].src = "Assets/imgs/icon-minus.svg";
+    controls[index].src = "images/icon-minus.svg";
   }
 }
 

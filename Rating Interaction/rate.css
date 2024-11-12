@@ -1,0 +1,153 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: rgb(34, 3, 63);
+  }
+  
+#rateSection {
+    background-color: hsl(216, 12%, 8%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #rateCard {
+    background-color: hsl(213, 19%, 18%);
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 400px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+#rateContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10%;
+  padding: 1rem 0 2rem;
+}
+
+
+#star {
+  border-radius: 50%;
+  background-color: hsl(225, 12%, 13%);
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#success_img {
+  display: none;
+  width: 120px;
+  height: 100px;
+  border-radius: none
+}
+
+#demo {
+  display: none;
+  background-color: hsl(218, 24%, 13%);
+  padding: 10px 20px;
+  height: max-content;
+  width: max-content;
+  border-radius: 20px;
+  color: hsl(25, 97%, 53%);
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+#intro {
+  margin: 0;
+}
+
+#pgh {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(217, 12%, 63%);
+  margin: 0;
+}
+
+.rates {
+  background-color: hsl(225, 12%, 13%);
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  max-width: 40px;
+}
+
+.rates:hover,
+.rates:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: black;
+}
+
+#submitBtn {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 20px;
+  color: hsl(218, 22%, 14%);
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+#retry {
+  display: none;
+  color: rgb(218, 40, 40);
+  font-weight: 600;
+}
+
+#submitBtn:hover,
+#submitBtn:focus {
+  background-color: white;
+}
+
+@media (max-width: 38rem) {
+  #form-heading {
+    font-size: 22px;
+  }
+
+  .formData {
+    grid-column: 1/3;
+  }
+  
+  #firstName {
+    grid-column: 1/3;
+  }
+  
+  #rateContainer {
+    grid-gap: 5%;
+    padding: 1rem 0 2rem;
+  }
+  
+}
+
+/* DOM classLists */
+.checkCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  }
+  .bg-color {
+    background-color: white;
+    color: black;
+  }
+  
