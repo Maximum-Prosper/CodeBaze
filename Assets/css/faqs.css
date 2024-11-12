@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+  .BGsection1 {
+    background-image: url(../imgs/background-pattern-desktop.svg);
+    width: 100%;
+    height: 50Vh;
+  }
+
+  .BGsection2 {
+    background-color:  rgb(228, 206, 210);
+    width: 100%;
+    height: 50Vh;
+  }
+
+  .FAQCard {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    padding: 1rem 2rem 3rem;
+    height: max-content;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    bottom:10%;
+    left: 10%;
+    right: 10%;
+    z-index: 1;
+  }
+
+  .heading {
+    display: flex;
+    gap: 1rem;
+  }
+
+  #head-text {
+    color:  rgb(34, 3, 63);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  .txtimg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .FAQs {
+    color: rgb(34, 3, 63);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .FAQs:hover,
+  .FAQs:focus,
+  .FAQs:active {
+    color: rgb(52, 8, 94);
+  }
+
+.minusIcon {
+  display: none;
+}
+
+.controlIcons {
+  cursor: pointer;
+}
+
+  .answers {
+    color: hsl(293, 68%, 71%);
+    margin: 8px 0;
+  }
+
+  /* DOM CONTROL */
+ .check {
+  display: block;
+ }
+
+ .hidden {
+  display: none;
+ }

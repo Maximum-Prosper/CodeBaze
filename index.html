@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-form</title>
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+  </head>
+  <body>
+    <section class="form-section">
+      <div class="form-container">
+        <h1 id="form-heading">Contact Us</h1>
+        <form action="" id="form">
+          <div class="formData" id="firstName">
+            <label for="name">First Name *</label>
+            <input type="text" required />
+            <span class="errorMsg"></span>
+          </div>
+
+          <div class="formData" id="lastName">
+            <label for="name">Last Name *</label>
+            <input type="text" required />
+            <span class="errorMsg"></span>
+          </div>
+
+          <div class="formData" id="email">
+            <label for="name">Email Address *</label>
+            <input type="email" required />
+            <span class="errorMsg"></span>
+          </div>
+
+          <div class="formData" id="queryType">
+            <label for="name">Query Type *</label>
+            <div class="radioInput">
+              <span id="enquirySpan" class="container">
+                <input
+                  type="radio"
+                  name="radio"
+                  required
+                  id="enquiry"
+                  class="pointer radioBtn"
+                />
+                <p>General Enquiry</p>
+                <span class="errorMsg"></span>
+              </span>
+
+              <span id="requestSpan" class="container">
+                <input
+                  type="radio"
+                  name="radio"
+                  required
+                  id="request"
+                  class="pointer radioBtn"
+                />
+                <p>Support Request</p>
+                <span class="errorMsg"></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="formData" id="msg">
+            <label for="name">Messages *</label>
+            <textarea name="message" id="textarea"></textarea>
+            <span class="errorMsg"></span>
+          </div>
+
+          <div class="consent" id="consent">
+            <input type="checkbox" class="pointer" id="checkbox" />
+            <p id="consentMsg">I consent to being contacted by the team</p>
+            <span class="errorMsg"></span>
+          </div>
+
+          <div class="formData" id="submit">
+            <input type="submit" class="pointer submitBtn" required id="sBtn" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="myScript.js"></script>
+  </body>
+</html>
