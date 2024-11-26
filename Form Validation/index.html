@@ -11,67 +11,60 @@
       <div class="form-container">
         <h1 id="form-heading">Contact Us</h1>
         <form action="" id="form">
-          <div class="formData" id="firstName">
-            <label for="name">First Name *</label>
-            <input type="text" required />
-            <span class="errorMsg"></span>
+          <div class="form-control">
+            <label for="name">User Name *</label>
+            <input type="text" id="userName" />
+            <small class="errorMsg"></small>
           </div>
 
-          <div class="formData" id="lastName">
-            <label for="name">Last Name *</label>
-            <input type="text" required />
-            <span class="errorMsg"></span>
-          </div>
-
-          <div class="formData" id="email">
+          <div class="form-control">
             <label for="name">Email Address *</label>
-            <input type="email" required />
-            <span class="errorMsg"></span>
+            <input type="email" id="email"/>
+            <small class="errorMsg"></small>
           </div>
 
-          <div class="formData" id="queryType">
+          <div class="form-control" id="radioContainer">
             <label for="name">Query Type *</label>
-            <div class="radioInput">
+            <div class="radioBox" >
               <span id="enquirySpan" class="container">
                 <input
                   type="radio"
                   name="radio"
-                  required
                   id="enquiry"
                   class="pointer radioBtn"
                 />
                 <p>General Enquiry</p>
-                <span class="errorMsg"></span>
               </span>
 
               <span id="requestSpan" class="container">
                 <input
                   type="radio"
                   name="radio"
-                  required
                   id="request"
                   class="pointer radioBtn"
                 />
                 <p>Support Request</p>
-                <span class="errorMsg"></span>
               </span>
             </div>
+            <small class="errorMsg" id="radioError"></small>
           </div>
 
-          <div class="formData" id="msg">
+          <div class="form-control">
             <label for="name">Messages *</label>
-            <textarea name="message" id="textarea"></textarea>
-            <span class="errorMsg"></span>
+            <textarea name="message" id="text"></textarea>
+            <small class="errorMsg"></small>
           </div>
 
-          <div class="consent" id="consent">
-            <input type="checkbox" class="pointer" id="checkbox" />
-            <p id="consentMsg">I consent to being contacted by the team</p>
-            <span class="errorMsg"></span>
+          <div id="consent">
+            <div class="consent"> 
+              <input type="checkbox" class="pointer" id="checkbox" />
+              <p id="consentMsg">I consent to being contacted by the team</p>
+            </div>
+            <small class="errorMsg" id="consentError"></small>
           </div>
 
-          <div class="formData" id="submit">
-            <input type="submit" class="pointer submitBtn" required id="sBtn" />
+          <div class="form-control">
+            <button type="submit" class="pointer" id="submitBtn">Submit</button> 
           </div>
         </form>
       </div>
