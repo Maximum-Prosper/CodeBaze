@@ -83,7 +83,7 @@ radioBtns.forEach((radioBtn) => {
   radioBtn.addEventListener("change", () => {
     // Reset background color for all divs
     containers.forEach((container) => (container.style.backgroundColor = ""));
-    // radioBtn.closest(".container").style.backgroundColor = "#33d6ff";
+    radioBtn.closest(".container").style.backgroundColor = "#33d6ff";
     isChecked = true;
   });
 })
