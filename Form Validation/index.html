@@ -8,6 +8,16 @@
   </head>
   <body>
     <section class="form-section">
+
+      <section class="pop-up" id="pop-up">
+        <div class="msgIcon">
+          <img src="images/icon-success-check.svg" alt="Success icon-success-check">
+          <h4>Message sent!</h4>
+        </div>
+        <p class="thanks">Thanks for completing the form. We'll be in touch soon.</p>
+      </section>
+
+
       <div class="form-container">
         <h1 id="form-heading">Contact Us</h1>
         <form action="" id="form">
@@ -19,13 +29,13 @@
 
           <div class="form-control">
             <label for="name">Email Address *</label>
-            <input type="email" id="email"/>
+            <input type="email" id="email" />
             <small class="errorMsg"></small>
           </div>
 
           <div class="form-control" id="radioContainer">
             <label for="name">Query Type *</label>
-            <div class="radioBox" >
+            <div class="radioBox">
               <span id="enquirySpan" class="container">
                 <input
                   type="radio"
@@ -56,7 +66,7 @@
           </div>
 
           <div id="consent">
-            <div class="consent"> 
+            <div class="consent">
               <input type="checkbox" class="pointer" id="checkbox" />
               <p id="consentMsg">I consent to being contacted by the team</p>
             </div>
@@ -64,12 +74,11 @@
           </div>
 
           <div class="form-control">
-            <button type="submit" class="pointer" id="submitBtn">Submit</button> 
+            <button type="submit" class="pointer" id="submitBtn">Submit</button>
           </div>
         </form>
       </div>
     </section>
-
     <script src="myScript.js"></script>
   </body>
 </html>

@@ -173,6 +173,32 @@ small {
   display: block;
 }
 
+
+/* Pop-up modal */
+.pop-up {
+  display: none;
+  background-color: var(--zero);
+  color: var(--nature);
+  padding: 1rem;
+  border-radius: .7rem;
+  position: absolute;
+  top: 1rem;
+}
+
+.msgIcon {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: .5rem;
+}
+
+.thanks,
+.pop-up h4 {
+  font-size: .9rem;
+  margin: .5rem 0;
+  
+}
+
 @media (max-width: 605px) {
   .form-container {
     padding: 1rem;

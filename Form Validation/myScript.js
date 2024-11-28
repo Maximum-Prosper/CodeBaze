@@ -7,7 +7,10 @@ const checkBox = document.getElementById("checkbox");
 const form = document.getElementById("form");
 const consent = document.getElementById("consent");
 const radioContainer = document.getElementById("radioContainer");
+const pop_up = document.getElementById("pop-up");
+const submitBtn = document.getElementById("submitBtn")
 let isChecked = false;
+let isValid = false;
 
 // show error function
 function showError(input, message) {
@@ -34,6 +37,7 @@ function radioBtnError(message) {
 function showSuccess(input) {
   formControl = input.parentElement;
   formControl.className = "form-control success";
+  isValid = true;
 }
 
 // check valid email format
@@ -41,6 +45,7 @@ function checkEmail(input) {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   if (emailRegex.test(input.value.trim())) {
     showSuccess(input);
+    isValid = true;
   } else {
     showError(input, "Email is not valid");
   }
@@ -62,6 +67,7 @@ function validateCheckBox() {
     checkBoxError("Your consent is required ");
   } else {
     consent.classList.remove("error");
+    isValid = true;
   }
 }
 
@@ -72,9 +78,10 @@ function getFieldName(input) {
 
 function checkRadioBtn() {
   if (isChecked === false) {
-    radioBtnError('Select a query type');
+    radioBtnError("Select a query type");
   } else {
-    radioContainer.classList.remove('error');
+    radioContainer.classList.remove("error");
+    isValid = true;
   }
 }
 
@@ -85,8 +92,9 @@ radioBtns.forEach((radioBtn) => {
     containers.forEach((container) => (container.style.backgroundColor = ""));
     radioBtn.closest(".container").style.backgroundColor = "#33d6ff";
     isChecked = true;
+    isValid = true;
   });
-})
+});
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -94,4 +102,18 @@ form.addEventListener("submit", (e) => {
   checkEmail(email);
   validateCheckBox(checkBox);
   checkRadioBtn(radioBtns);
-})
+
+  if (isValid === true) {
+    pop_up.style.display = "block";
+    const inputFields = [userName, email, text];
+    inputFields.forEach((inputField) => {
+      inputField.value = "";
+    });
+    checkBox.checked = false;
+    radioBtns.forEach((radioBtn) => {
+      radioBtn.checked = false;
+      containers.forEach((container) => (container.style.backgroundColor = ""));
+    });
+    submitBtn.disabled = true
+  }
+});
