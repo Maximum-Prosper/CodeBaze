@@ -1,74 +1,135 @@
+/* Global Styles */
 body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-#container {
-  width: 100%;
-  background-color: hsl(210, 60%, 98%);
-  margin: auto;
-  height: 100vh;
-  display: flex;
-}
-
-#main-card {
-  background-color: white;
-  width: 60%;
-  margin: auto;
-  padding: 1.5rem;
-  height: 80%;
-  border-radius: 10px;
-}
-
-#first-row {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: hsl(210, 60%, 98%);
+  }
+  
+  /* Container Styles */
+  #container {
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    grid-gap: 1rem;
-}
-
-#total-notify {
+    overflow-y: auto;
+  }
+  
+  /* Main Card */
+  #main-card {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* First Row - Header */
+  #first-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  #notif-Num {
     font-weight: 700;
     background-color: hsl(224, 94%, 26%);
     color: white;
-    width: max-content;
-    padding: 5px 12px;
+    padding: 0.7rem 1rem;
     border-radius: 5px;
-}
-
-#getMark {
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #markAsRead {
     font-weight: 700;
-}
-
-.second-row {
+    font-size: 1rem;
+    color: hsl(224, 94%, 26%);
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  #markAsRead:hover {
+    color: hsl(224, 98%, 16%);
+  }
+  
+  /* Notifications Container */
+  .second-row {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-}
-
-.unread {
-    background-color:  hsl(211, 68%, 94%);
-    border-radius: 10px;
-}
-
-.myNotifications {
+  }
+  
+  /* Notification Styles */
+  .notifications {
     display: flex;
+    align-items: center;
     gap: 1rem;
     padding: 1rem;
-}
-
-img {
+    border-radius: 10px;
+    background-color: hsl(211, 68%, 94%);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .notifications:hover {
+    transform: scale(1.01);
+  }
+  
+  /* Unread Notification Style */
+  .unread {
+    background-color: hsl(211, 68%, 94%); /* Default unread color */
+  }
+  
+  /* Read Notification Style */
+  .read {
+    background-color: hsl(255, 100%, 100%); /* Read notification color */
+  }
+  
+  /* Icons */
+  .unreadMsgIcon, .readMessageIcon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .readMessageIcon {
+    display: none; /* Hidden by default */
+  }
+  
+  /* Profile Images */
+  .individuals {
     width: 50px;
-   height: 50px;
-}
-
-.notification {
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Notification Text */
+  .messages {
     margin: 5px 0;
-}
-
-.getDay {
+    font-size: 0.95rem;
+    color: hsl(219, 14%, 35%);
+    font-weight: 500;
+  }
+  
+  .getDay {
     margin: 0;
-    color: hsl(219, 14%, 63%); 
-}
+    font-size: 0.85rem;
+    color: hsl(219, 14%, 63%);
+  }
+  
+  /* Hover Effects on Icons */
+  .unreadMsgIcon:hover, .readMessageIcon:hover {
+    transform: scale(1.1);
+  }
+  
+
+  

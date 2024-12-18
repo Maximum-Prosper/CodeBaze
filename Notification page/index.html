@@ -4,96 +4,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notifications</title>
-    <link rel="stylesheet" href="notifications.css">
+    <link rel="stylesheet" href="notifications.css" />
   </head>
   <body>
     <div id="container">
       <div id="main-card">
         <div id="first-row">
           <h1 id="heading">Notifications</h1>
-          <p id="total-notify">3</p>
-          <p id="getMark">Mark all as read</p>
+          <p id="notif-Num"></p> <!-- The total number of notifications -->
+          <p id="markAsRead" title="Mark all as read">Mark all as read</p>
         </div>
-      
-      <div class="second-row">
-        <div class="myNotifications unread">
-          <img src="images/avatar-angela-gray.webp" alt="" />
-          <span class="span">
-            <p class="notification">
+
+        <div class="second-row">
+          <!-- Notification 1 -->
+          <div class="notifications unread">
+            <img src="images/avatar-angela-gray.webp" class="individuals" alt="" />
+            <span class="span">
+              <p class="messages">
                 <b>Mark Webber</b> reacted to your recent post
                 <b>My first tournament today!</b>
               </p>
               <p class="getDay">1m ago</p>
-          </span>
-        </div>
+            </span>
+            <img title="Unread Message"
+                src="images/icons8_unread_messages_1.svg" class="unreadMsgIcon"
+                alt="Unread message"
+              />
+            <img src="images/icons8_received.svg" alt="" class="readMessageIcon hide">
+          </div>
 
-        <div class="myNotifications unread">
-          <img src="images/avatar-anna-kim.webp" alt="" />
-          <span class="span">
-            <p class="notification">
-                <b>Angela Gray</b> followed you
-              </p>
+          <!-- Notification 2 -->
+          <div class="notifications unread">
+            <img src="images/avatar-anna-kim.webp" class="individuals" alt="" />
+            <span class="span">
+              <p class="messages"><b>Angela Gray</b> followed you</p>
               <p class="getDay">5m ago</p>
-          </span>
-        </div>
+            </span>
+            <img title="Unread Message"
+                src="images/icons8_unread_messages_1.svg" class="unreadMsgIcon"
+                alt="Unread message"
+              />
+            <img src="images/icons8_received.svg" alt="" class="readMessageIcon hide">
+          </div>
 
-        <div class="myNotifications unread">
-          <img src="images/avatar-jacob-thompson.webp" alt="" />
-          <span class="span">
-            <p class="notification">
+          <!-- Notification 3 -->
+          <div class="notifications unread">
+            <img src="images/avatar-jacob-thompson.webp" class="individuals" alt="" />
+            <span class="span">
+              <p class="messages">
                 <b>Jacob Thompson</b> has joined your group
                 <b>Chess club</b>
               </p>
               <p class="getDay">1 day ago</p>
-          </span>
-         
-        </div>
+            </span>
+            <img title="Unread Message"
+                src="images/icons8_unread_messages_1.svg" class="unreadMsgIcon"
+                alt="Unread message"
+              />
+            <img src="images/icons8_received.svg" alt="" class="readMessageIcon hide">
+          </div>
 
-        <div class="myNotifications">
-          <img src="images/avatar-kimberly-smith.webp" alt="" />
-          <span class="span">
-            <p class="notification">
+          <!-- Notification 4 -->
+          <div class="notifications unread">
+            <img src="images/avatar-kimberly-smith.webp" class="individuals" alt="" />
+            <span class="span">
+              <p class="messages">
                 <b>Rizky Hasanuddin</b> sent you a private message
               </p>
               <p class="getDay">5 days ago</p>
-              <!-- <span class="message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</span> -->
-          </span>
-        </div>
+            </span>
+            <img title="Unread Message"
+                src="images/icons8_unread_messages_1.svg" class="unreadMsgIcon"
+                alt="Unread message"
+              />
+            <img src="images/icons8_received.svg" alt="" class="readMessageIcon hide">
+          </div>
 
-        <div class="myNotifications">
-          <img src="images/avatar-mark-webber.webp" alt="" />
-          <span class="span">
-            <p class="notification">
+          <!-- Notification 5 -->
+          <div class="notifications unread">
+            <img src="images/avatar-mark-webber.webp" class="individuals" alt="" />
+            <span class="span">
+              <p class="messages">
                 <b>Kimberly Smith</b> commented on your picture
               </p>
               <p class="getDay">1 week ago</p>
-          </span>
-        </div>
+            </span>
+            <img title="Unread Message"
+                src="images/icons8_unread_messages_1.svg" class="unreadMsgIcon"
+                alt="Unread message"
+              />
+            <img src="images/icons8_received.svg" alt="" class="readMessageIcon hide">
+          </div>
 
-        <div class="myNotifications">
-          <img src="images/avatar-nathan-peterson.webp" alt="" />
-          <span class="span">
-            <p class="notification">
+          <!-- Notification 6 -->
+          <div class="notifications unread">
+            <img src="images/avatar-nathan-peterson.webp" class="individuals" alt="" />
+            <span class="span">
+              <p class="messages">
                 <b>Nathan Peterson</b> reacted to your recent post
-                <b> 5 end-game strategies to increase your win rate!</b>
+                <b>5 end-game strategies to increase your win rate!</b>
               </p>
               <p class="getDay">2 weeks ago</p>
-          </span>
-        </div>
-
-        <div class="myNotifications">
-            <img src="images/avatar-rizky-hasanuddin.webp" alt="" />
-            <span class="span">
-                <p class="notification">
-                    <b>Anna Kim</b> left the group chess club
-                    <b> chess club</b>
-                  </p>
-                  <p class="getDay">2 weeks ago</p>
             </span>
+            <img title="Unread Message"
+                src="images/icons8_unread_messages_1.svg" class="unreadMsgIcon"
+                alt="Unread message"
+              />
+            <img src="images/icons8_received.svg" alt="" class="readMessageIcon hide">
+          </div>
+
+          <!-- Notification 7 -->
+          <div class="notifications unread">
+            <img src="images/avatar-rizky-hasanuddin.webp" class="individuals" alt="" />
+            <span class="span">
+              <p class="messages">
+                <b>Anna Kim</b> left the group
+                <b>chess club</b>
+              </p>
+              <p class="getDay">2 weeks ago</p>
+            </span>
+            <img title="Unread Message"
+                src="images/icons8_unread_messages_1.svg" class="unreadMsgIcon"
+                alt="Unread message"
+              />
+            <img src="images/icons8_received.svg" alt="" class="readMessageIcon hide">
           </div>
 
         </div>
       </div>
     </div>
+    <script src="notifications.js"></script>
   </body>
 </html>
