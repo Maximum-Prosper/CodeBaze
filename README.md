@@ -1,1 +1,2 @@
-This is a chrome extension that enable browsers save current tabs in local storage and forwards their URl in the interface for users to easily navigate to anytime
+This describes the workflow of my journey to becoming a good javascript programmer.
+It contains projects that are helpful for beginners aiming at javascript programming language.
